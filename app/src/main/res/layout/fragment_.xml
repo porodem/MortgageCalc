@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_flat_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flat_price"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etFlatPrice"
+        app:layout_constraintEnd_toStartOf="@+id/etFlatPrice"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etFlatPrice"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_flat_price"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekFlatPrice"
+        android:layout_width="286dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:max="8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFlatPrice" />
+
+    <TextView
+        android:id="@+id/tvYears"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/years"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvStartPercent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekFlatPrice" />
+
+    <Spinner
+        android:id="@+id/etYears"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/etStartPercent"
+        app:layout_constraintEnd_toEndOf="@+id/tvYears"
+        app:layout_constraintStart_toStartOf="@+id/tvYears" />
+
+    <TextView
+        android:id="@+id/tvStartPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_pay_percent"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvCapital"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvYears"
+        app:layout_constraintTop_toTopOf="@+id/tvYears" />
+
+    <EditText
+        android:id="@+id/etStartPercent"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/tvStartPercent"
+        app:layout_constraintStart_toStartOf="@+id/tvStartPercent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStartPercent" />
+
+    <TextView
+        android:id="@+id/tvCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/capital"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvPercent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvStartPercent"
+        app:layout_constraintTop_toTopOf="@+id/tvStartPercent" />
+
+    <EditText
+        android:id="@+id/etHaveCash"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:textColor="@color/greenLast"
+        android:textAlignment="center"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/tvCapital"
+        app:layout_constraintStart_toStartOf="@+id/tvCapital"
+        app:layout_constraintTop_toBottomOf="@+id/tvCapital" />
+
+    <TextView
+        android:id="@+id/tvPercent"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:text="@string/percent"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvCapital"
+        app:layout_constraintTop_toTopOf="@+id/tvCapital" />
+
+    <Spinner
+        android:id="@+id/etPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/tvPercent"
+        app:layout_constraintStart_toStartOf="@+id/tvPercent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPercent" />
+
+    <TextView
+        android:id="@+id/tvStartPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="300000"
+        android:textColor="@color/redPrice"
+        app:layout_constraintEnd_toEndOf="@+id/etStartPercent"
+        app:layout_constraintStart_toStartOf="@+id/etStartPercent"
+        app:layout_constraintTop_toBottomOf="@+id/etStartPercent" />
+
+    <TextView
+        android:id="@+id/tvMonthly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="20000"
+        android:textColor="@color/redPrice"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/etPercent"
+        app:layout_constraintTop_toBottomOf="@+id/etPercent" />
+
+    <TextView
+        android:id="@+id/tvMonthlyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/monthly_pay"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvMonthly"
+        app:layout_constraintStart_toStartOf="@+id/tvMonthly"
+        app:layout_constraintTop_toBottomOf="@+id/tvMonthly" />
+
+    <TextView
+        android:id="@+id/tvCreditSumLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/credit_sum"
+        app:layout_constraintEnd_toEndOf="@+id/tvStartPay"
+        app:layout_constraintStart_toStartOf="@+id/tvStartPay"
+        app:layout_constraintTop_toBottomOf="@+id/tvStartPay" />
+
+    <TextView
+        android:id="@+id/tvCreditSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="1999000"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvCreditSumLable"
+        app:layout_constraintStart_toStartOf="@+id/tvCreditSumLable"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreditSumLable" />
+
+    <TextView
+        android:id="@+id/tvAgencyTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="49000"
+        android:textColor="@color/redPrice"
+        app:layout_constraintBottom_toBottomOf="@+id/switchAgencyTax"
+        app:layout_constraintStart_toEndOf="@+id/switchAgencyTax"
+        app:layout_constraintTop_toTopOf="@+id/switchAgencyTax" />
+
+    <TextView
+        android:id="@+id/tvLastCash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="1000"
+        android:textColor="@color/greenLast"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLastCashLable"
+        app:layout_constraintStart_toEndOf="@+id/tvLastCashLable"
+        app:layout_constraintTop_toTopOf="@+id/tvLastCashLable" />
+
+    <TextView
+        android:id="@+id/tvLastCashLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/cash_last"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/button_calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageAgencySettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/switchAgencyTax"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/switchAgencyTax"
+        app:srcCompat="@drawable/ic_settings" />
+
+    <Switch
+        android:id="@+id/switchAgencyTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/agency_tax"
+        app:layout_constraintBottom_toTopOf="@+id/tvLastCashLable"
+        app:layout_constraintStart_toEndOf="@+id/imageAgencySettings" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

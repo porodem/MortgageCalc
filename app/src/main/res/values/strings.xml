@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Ипокал</string>
+    <string name="years">лет</string>
+    <string name="capital">накопления</string>
+    <string name="flat_price">цена недвижимости:</string>
+    <string name="start_pay_percent">% взн.</string>
+    <string name="start_pay_sum">сумма перв. взноса</string>
+    <string name="percent">%</string>
+    <string name="cash_last">остаток</string>
+    <string name="credit_sum">кредит</string>
+    <string name="agency_tax">агентство</string>
+    <string name="monthly_pay">ежемесячно</string>
+    <string name="button_calculate">Считать</string>
+
+    <string name="set_price_limit">В пределах какой суммы планирется покупка недвижимости?</string>
+    <string name="start_pay_info">Сумма первоначального взноса</string>
+    <string name="info_monthly">Ежемесячный платёж</string>
+    <string name="menu_agency">агентство</string>
+    <string name="intro_agency_settings">Комиссия агентства формируется из
+        фиксированной <b>суммы</b> + <b>процент</b> от стоимости объекта</string>
+    <string name="constant_pay">сумма</string>
+    <string name="percent_agency">% от цены</string>
+
+    <string name="extra_pays">дополнительно</string>
+    <string name="extra_pays_intro">Укажите дополнительные расходы при покупке недвижимости</string>
+    <string name="extra_owner_rights">оформление права собственности</string>
+    <string name="extra_owner_rights2">право собственности</string>
+    <string name="extra_estimate_estate">оценка недвижимости</string>
+    <string name="extra_insurance">страховка</string>
+    <string name="extra_other">расходы на банковскую ячейку и другие расходы, имеющие место в вашем случае</string>
+    <string name="total">ИТОГО:</string>
+
+
+</resources>
